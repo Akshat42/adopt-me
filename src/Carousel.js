@@ -11,7 +11,6 @@ class Carousel extends Component {
   };
 
   handleImageClick = (event) => {
-    console.log(event);
     this.setState({
       active: event.target.dataset.index,
     });
