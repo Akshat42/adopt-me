@@ -4,7 +4,6 @@ import { createPortal } from "react-dom";
 const modalRoot = document.getElementById("modal");
 
 const Modal = ({ children }) => {
-    console.log(children);
     const elRef = useRef(null);
     if (!elRef.current) {
         elRef.current = document.createElement('div');
