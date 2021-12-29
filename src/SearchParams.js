@@ -18,7 +18,7 @@ const SearchParams = () => {
 
   async function requestPets() {
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
+      `https://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
     );
     const json = await res.json();
     setPets(json.pets);
@@ -30,7 +30,7 @@ const SearchParams = () => {
 
   async function requestBreeds() {
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/breeds?animal=${animal}`
+      `https://pets-v2.dev-apis.com/breeds?animal=${animal}`
     );
     const json = await res.json();
     if (json.breeds) setBreedList(json.breeds);

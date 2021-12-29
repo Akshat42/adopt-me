@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 // };
 
 const Pet = ({ name, animal, breed, id, images, location }) => {
-  let image = "http://pets-images.dev-apis.com/pets/none.jpg";
+  let image = "https://pets-images.dev-apis.com/pets/none.jpg";
 
   if (images.length) {
     image = images[0];
