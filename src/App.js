@@ -36,8 +36,8 @@ const App = () => {
           }}
       >
         <Router>
-          <header>
-            <Link to={"/"}>Adopt Me!</Link>
+          <header className="w-full mb-10 text-center p-7 bg-gradient-to-b from-purple-400 to-red-400">
+            <Link className="text-5xl text-white hover:text-gray-300" to={"/"}>Adopt Me!</Link>
           </header>
           <Switch>
             <Route path="/details/:id">
